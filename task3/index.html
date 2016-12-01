@@ -5,29 +5,24 @@
 	<title>任务三：三栏式布局</title>
 	<style type="text/css">
         body{
-            width: 99%;
-            height: 90%
-        }
-        .outer{
-        	width: 95%;
-        	height: 420px;
-        	margin: 0 auto;
-        	background: #eee;
-        	margin-top: 20px;
-            left: 20px;
-            right: 20px;
-        	border: 1px solid #999;
             padding: 20px;
         }
-        .box1{
+        .outer{
             display: inline-block;
-        	width: 200px;
-        	height: 120px;
+        	margin: 0 auto;
+        	background: #eee;
+        	border: 1px solid #999;
+            padding: 20px;
+            position: relative;
+        }
+        .box1{
+        	width: 160px;
+        	height: 80px;
             background: white;
             border: 1px solid #999;
-            margin: 0 1.5% 1.5% 0;
+            margin-right: 20px;
+            padding: 20px;
             float: left;
-            position: absolute;
         }
         .img{
         	width: 80px;
@@ -35,128 +30,34 @@
         	background: url(images/ali.jpg);
         	background-size: 80px 80px;
         	float: left;
-        	margin: 20px 20px 0 20px;
         	border: 1px solid #999;
         }
         .box1 .box1_right{
-        	float: left;
-        	margin-top: 20px;
+        	float: right;
         	font: bold;
         }
         .box2{
-            width: 68.6%;
-            height: 80%;
             border: 1px solid #999;
-            right: 30%;
-            left: 220px;
-            position: relative;
+            margin-left: 220px;
+            margin-right: 140px;
             background: white;
             padding: 20px;
         }
         .box3{
         	width: 120px;
-        	height: 420px;
-            left: 88.2%;
-            top: 40px;
         	border: 1px solid #999;
         	background: white;
-            position: absolute;
+            float: right;
         }
         .img1{
         	width: 80px;
         	height: 80px;
         	background: url(images/ali.jpg);
         	background-size: 80px 80px;
-        	float: left;
-        	margin: 20px 20px 0 20px;
         	border: 1px solid #999;
+            margin: 20px;
         }
-        .img2{
-        	width: 80px;
-        	height: 80px;
-        	background: url(images/ali.jpg);
-        	background-size: 80px 80px;
-        	float: left;
-        	margin: 18px 20px 0 20px;
-        	border: 1px solid #999;
-        }
-         @media screen and (max-width: 1350px){
-            .box2{
-                width: 68%;
-            }
-            .box3{
-                left: 88%;
-            }
-        }
-        @media screen and (max-width: 1300px){
-            .box2{
-                width: 65.5%;
-            }
-            .box3{
-                left: 87.4%;
-            }
-        }
-        @media screen and (max-width: 1200px){
-            .box2{
-                width: 64.5%;
-            }
-            .box3{
-                left: 87.4%;
-            }
-        }
-        @media screen and (max-width: 1180px){
-            .box2{
-                width: 62%;
-            }
-            .box3{
-                left: 86.8%;
-            }
-        }
-         @media screen and (max-width: 1130px){
-            .box2{
-                width: 62%;
-            }
-            .box3{
-                left: 86.5%;
-            }
-        }
-        @media screen and (max-width: 1085px){
-            .outer{
-                height: 500px;
-                padding: 20px 20px 0 20px;
-            }
-            .box2{
-                width: 60%;
-                height: 87%;
-            }
-            .box3{
-                left: 85.7%;
-            }
-        }
-        @media screen and (max-width: 1080px){
-            .box2{
-                width: 60%;
-            }
-            .box3{
-                left: 85.7%;
-            }
-        }
-         @media screen and (max-width: 1000px){
-            .box2{
-                width: 57.3%;
-            }
-            .box3{
-                left: 85.3%;
-            }
-        }
-        @media screen and (max-width: 980px){
-        .box2{
-            width: 56.5%;
-        }
-        .box3{
-            left: 85%;
-        }
-        }
+        
 	</style>
 </head>
 <body>
@@ -165,8 +66,14 @@
 		<div class="img"></div>
 		<div class="box1_right"><b>团队名称</b></div>
 	</div>
+    <div class="box3">
+        <div class="img1"></div>
+        <div class="img1"></div>
+        <div class="img1"></div>
+        <div class="img1"></div>
+    </div>
 	<div class="box2">
-			<p><b>没有团队，只有我一个人</b></p>
+			<b>没有团队，只有我一个人</b>
 			<p><b>学习任何东西都要投入才有收获</b></p>
             <p><b>分享一段周国平的散文</b></p>
             <p><b>相爱的人们也只是“在黑暗中并肩行走”，所能做到的仅是各自努力追求心中的光明，并互相感受到这种努力，互相鼓励，而“不需要注视别人的脸和探视别人的心灵”。即使两人相爱，他们的灵魂也无法同行。世间最动人的爱仅是一颗独行的灵魂与另一颗独行的灵魂之间最深切的呼唤和应答。外在的眼睛看见现象，内在的眼睛看到 本质。
@@ -174,12 +81,7 @@
             <p><b>许多时候，我们的内在眼睛是关 闭着的。于是，我们看见利益，却看不见 真理，看见万物，却看不见美，看见世 界，却看不见上帝，我们的日子是满的， 生命却是空的，头脑是满的，心却是空 的。。有着纯正追求的青春岁月的确是人生最美好的岁月。有的人总是在寻找，凡到手的，都不是他要的。有的人从来不寻找，凡到手的，都是他要的。各有各的活法，究竟哪种好，只有天知道。许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。
             </b></p>
 	</div>
-	<div class="box3">
-		<div class="img1"></div>
-		<div class="img2"></div>
-		<div class="img2"></div>
-		<div class="img2"></div>
-	</div>
+	
 </div>
 </body>
 </html>
