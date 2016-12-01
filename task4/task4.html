@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>定位和居中问题</title>
+	<style type="text/css">
+        .main{
+        	height: 200px;
+        	width: 400px;
+        	background-color: #ccc;
+        	left:  50%;
+        	margin-left: -200px;
+        	top: 50%;
+        	margin-top: -100px;
+        	position: absolute;
+        	
+        }
+        .sector1{
+        	height: 50px;
+        	width: 50px;
+        	border-radius: 0 0 50px 0;
+        	background-color: #fc0;
+        	left: 0;
+        	top: 0;
+        }
+        .space{
+        	height: 100px;
+        }
+        .sector2{
+        	height: 50px;
+        	width: 50px;
+        	border-radius: 50px 0 0 0;
+        	background-color: #fc0;
+        	right: 0;
+        	bottom: 0;
+        	float: right;
+        	position: relative;
+        }  
+
+	</style>
+</head>
+<body>
+    <div class="main">
+    	<div class="sector1"></div>
+    	<div class="space"></div>
+    	<div class="sector2"></div>
+    </div>
+</body>
+</html>
