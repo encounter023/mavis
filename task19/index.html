@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>任务十九</title>
+	
+	<style type="text/css">
+       input{
+       	font-family: 微软雅黑;
+       	font-size: 12px;
+       }
+       input[type="button"]:hover{
+       	background-color: yellow;
+       }
+       #right_in,#right_out{
+       	margin-right: 30px;
+       }
+       #show{
+       	display: -webkit-flex; /* for webkit */
+        display: flex;
+        align-items: flex-end;
+        margin:50px 0 0 30px;
+       }
+       #show div{
+       	width: 20px;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 10px;               
+        background-color: #E6E6FA;
+       }
+	</style>
+</head>
+<body>
+    <label>
+    	<input type="text" id="input">
+    	<input type="button" id="left_in" value="左侧入">
+    	<input type="button" id="right_in" value="右侧入">
+    	<input type="button" id="left_out" value="左侧出">
+    	<input type="button" id="right_out" value="右侧出">
+    	<input type="button" id="sort" value="排序">
+    	<input type="button" id="random" value="随机生成一组数据">
+    </label>
+
+    <div id="show"></div>
+
+    <script type="text/javascript" src="task19.js"></script>
+</body>
+</html>
